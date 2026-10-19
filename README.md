@@ -1,6 +1,6 @@
 # Qunsheng Zhang · Academic Homepage
 
-张群声的学术个人主页，聚焦 AI Agent、可信人工智能、多智能体系统与强化学习研究。
+张群声的学术个人主页，聚焦 AI4Math、LLM 推理、可信智能体、多智能体系统与强化学习研究。
 
 访问主页：[qunsheng-zhang.github.io](https://qunsheng-zhang.github.io/)
 
