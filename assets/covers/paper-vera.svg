@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
-  <rect width="300" height="200" fill="#edf2f7"/>
-  <g stroke="#d8e0e8" stroke-width="1"><path d="M0 40h300M0 80h300M0 120h300M0 160h300"/><path d="M50 0v200M100 0v200M150 0v200M200 0v200M250 0v200"/></g>
-  <g fill="none" stroke="#7891a8" stroke-width="2" stroke-dasharray="5 5"><path d="M60 42L150 98L241 40M150 98L239 158M150 98L61 158"/></g>
-  <g fill="#fff" stroke="#2368b5" stroke-width="3"><circle cx="60" cy="42" r="12"/><circle cx="241" cy="40" r="12"/><circle cx="239" cy="158" r="12"/><circle cx="61" cy="158" r="12"/></g>
-  <circle cx="150" cy="98" r="34" fill="#2368b5"/>
+  <rect width="300" height="200" fill="#f4eae3"/>
+  <g stroke="#e8dbd2" stroke-width="1"><path d="M0 40h300M0 80h300M0 120h300M0 160h300"/><path d="M50 0v200M100 0v200M150 0v200M200 0v200M250 0v200"/></g>
+  <g fill="none" stroke="#b09c90" stroke-width="2" stroke-dasharray="5 5"><path d="M60 42L150 98L241 40M150 98L239 158M150 98L61 158"/></g>
+  <g fill="#fff" stroke="#5c0003" stroke-width="3"><circle cx="60" cy="42" r="12"/><circle cx="241" cy="40" r="12"/><circle cx="239" cy="158" r="12"/><circle cx="61" cy="158" r="12"/></g>
+  <circle cx="150" cy="98" r="34" fill="#5c0003"/>
   <text x="150" y="103" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#fff">VERA</text>
-  <text x="150" y="190" text-anchor="middle" font-family="Arial" font-size="11" fill="#5d6b78">ROOT-DOMAIN EVIDENCE QUORUM</text>
+  <text x="150" y="190" text-anchor="middle" font-family="Arial" font-size="11" fill="#6f625b">ROOT-DOMAIN EVIDENCE QUORUM</text>
 </svg>

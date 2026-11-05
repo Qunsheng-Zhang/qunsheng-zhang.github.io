@@ -3,27 +3,100 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#f6e8df" />
     <title>Projects - Qunsheng Zhang</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" /><link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="bg-light">
-    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top mb-5 shadow-sm"><div class="container"><a class="navbar-brand" href="index.html"><strong>Homepage</strong></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-map"></i> Menu</button><div class="collapse navbar-collapse" id="navbarResponsive"><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li><li class="nav-item active"><a class="nav-link" href="projects.html">Projects</a></li><li class="nav-item"><a class="nav-link" href="showcase.html">Showcase</a></li><li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li></ul></div></div></nav>
-    <main class="container">
-      <section class="card border-0 shadow-sm bg-white page-heading-card mb-3"><div class="card-body p-4"><h1>Projects</h1><p class="text-muted mb-0">Selected research and engineering projects.</p></div></section>
-      <section class="row">
-        <div class="col-md-6 mb-3">
-          <article class="card border-0 shadow-sm h-100"><img src="assets/covers/project-soc.svg" class="card-img-top project-cover" alt="Security operations agent pipeline" /><div class="card-body"><h5 class="card-title">Security Operations Large Language Model</h5><p class="small text-muted mb-2"><a href="https://www.bankcomm.com/BankCommSite/shtml/jyjr/en/2600212/list.shtml?channelId=2600212" target="_blank" rel="noreferrer">Bank of Communications</a> · 2025–2026</p><p class="card-text small">Designed a behavior-aggregation-first pipeline that combines vector retrieval, BM25, IOC matching, multi-agent triage, specialist review, evidence citation, and human feedback for auditable SOC alert investigation.</p><span class="badge badge-light">LLM Agents</span> <span class="badge badge-light">Hybrid RAG</span> <span class="badge badge-light">AI Security</span></div></article>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Qunsheng Zhang</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i> Menu</button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+            <li class="nav-item active"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="showcase.html">Showcase</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li>
+          </ul>
         </div>
-        <div class="col-md-6 mb-3">
-          <article class="card border-0 shadow-sm h-100"><img src="assets/covers/project-control.svg" class="card-img-top project-cover" alt="Multi-agent control" /><div class="card-body"><h5 class="card-title">Distributed Secure Cooperative Control</h5><p class="small text-muted mb-2">NSFC Project 62073079 · 2022–2024</p><p class="card-text small">Studied robust and optimized control of nonlinear multi-agent systems under malicious attacks, communication delays, packet loss, disturbances, and resource constraints using reinforcement learning and sliding-mode control.</p><span class="badge badge-light">Reinforcement Learning</span> <span class="badge badge-light">MAS</span> <span class="badge badge-light">Control Theory</span></div></article>
+      </div>
+    </nav>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Projects</h1>
+          <p>Selected research and engineering projects.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <article class="card h-100">
+                <img src="assets/covers/project-soc.svg" class="card-img-top project-cover" alt="Security operations agent pipeline" />
+                <div class="card-body">
+                  <h5 class="card-title">Security Operations Large Language Model</h5>
+                  <p class="small text-muted mb-2">
+                    <a href="https://www.bankcomm.com/BankCommSite/shtml/jyjr/en/2600212/list.shtml?channelId=2600212" target="_blank" rel="noreferrer">Bank of Communications</a> · 2025–2026
+                  </p>
+                  <p class="card-text small">
+                    Designed a behavior-aggregation-first pipeline that combines vector retrieval, BM25, IOC matching, multi-agent triage, specialist review, evidence citation, and human feedback for auditable SOC alert investigation.
+                  </p>
+                  <div class="card-tags">
+                    <span class="tag">LLM Agents</span>
+                    <span class="tag">Hybrid RAG</span>
+                    <span class="tag">AI Security</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <article class="card h-100">
+                <img src="assets/covers/project-control.svg" class="card-img-top project-cover" alt="Multi-agent control" />
+                <div class="card-body">
+                  <h5 class="card-title">Distributed Secure Cooperative Control</h5>
+                  <p class="small text-muted mb-2">NSFC Project 62073079 · 2022–2024</p>
+                  <p class="card-text small">
+                    Studied robust and optimized control of nonlinear multi-agent systems under malicious attacks, communication delays, packet loss, disturbances, and resource constraints using reinforcement learning and sliding-mode control.
+                  </p>
+                  <div class="card-tags">
+                    <span class="tag">Reinforcement Learning</span>
+                    <span class="tag">MAS</span>
+                    <span class="tag">Control Theory</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="footer"><div class="container"><div class="row my-3"><div class="col-6 text-muted"><i>Last updated: Oct 2026</i></div><div class="col-6 text-right text-muted">© <span id="year"></span> Qunsheng Zhang</div></div></div></footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script><script src="script.js"></script>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6"><div><i>Last updated: Oct 2026</i></div></div>
+          <div class="col-6"><div class="text-right">© <span id="year"></span> Qunsheng Zhang</div></div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

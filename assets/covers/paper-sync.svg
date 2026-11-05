@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
-  <rect width="300" height="200" fill="#edf2f7"/>
-  <g fill="none" stroke="#8093a6" stroke-width="2"><path d="M54 50L125 28L220 53L246 126L170 164L75 145Z"/><path d="M54 50L170 164M125 28L246 126M220 53L75 145"/></g>
-  <g fill="#fff" stroke="#2368b5" stroke-width="3"><circle cx="54" cy="50" r="13"/><circle cx="125" cy="28" r="13"/><circle cx="220" cy="53" r="13"/><circle cx="246" cy="126" r="13"/><circle cx="170" cy="164" r="13"/><circle cx="75" cy="145" r="13"/></g>
-  <circle cx="150" cy="98" r="27" fill="#2368b5"/>
+  <rect width="300" height="200" fill="#f4eae3"/>
+  <g fill="none" stroke="#b09c90" stroke-width="2"><path d="M54 50L125 28L220 53L246 126L170 164L75 145Z"/><path d="M54 50L170 164M125 28L246 126M220 53L75 145"/></g>
+  <g fill="#fff" stroke="#5c0003" stroke-width="3"><circle cx="54" cy="50" r="13"/><circle cx="125" cy="28" r="13"/><circle cx="220" cy="53" r="13"/><circle cx="246" cy="126" r="13"/><circle cx="170" cy="164" r="13"/><circle cx="75" cy="145" r="13"/></g>
+  <circle cx="150" cy="98" r="27" fill="#5c0003"/>
   <path d="M135 98h30M150 83v30" stroke="#fff" stroke-width="4"/>
-  <text x="150" y="193" text-anchor="middle" font-family="Arial" font-size="11" fill="#5d6b78">FIXED-TIME SYNCHRONIZATION</text>
+  <text x="150" y="193" text-anchor="middle" font-family="Arial" font-size="11" fill="#6f625b">FIXED-TIME SYNCHRONIZATION</text>
 </svg>

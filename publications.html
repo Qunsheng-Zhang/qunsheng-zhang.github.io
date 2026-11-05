@@ -3,20 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#f6e8df" />
     <title>Publications - Qunsheng Zhang</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="bg-light">
-    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top mb-5 shadow-sm">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top mb-5">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><strong>Homepage</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-map"></i> Menu</button>
+        <a class="navbar-brand" href="index.html">Qunsheng Zhang</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i> Menu</button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -29,50 +33,80 @@
       </div>
     </nav>
 
-    <main class="container">
-      <section class="card border-0 shadow-sm bg-white page-heading-card mb-3">
-        <div class="card-body p-4"><h1>Publications</h1><p class="text-muted mb-0">Research on AI4Math, LLM reasoning, multi-agent systems, control, and trustworthy AI.</p></div>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Publications</h1>
+          <p>Research on AI4Math, LLM reasoning, multi-agent systems, control, and trustworthy AI.</p>
+        </div>
       </section>
 
-      <section class="bg-white shadow-sm rounded-sm">
-        <h6 class="border-bottom border-gray p-3 mb-0"><i class="fas fa-book"></i> All Publications</h6>
+      <section class="section">
+        <div class="container">
+          <div class="panel panel-flush">
+            <article class="pub-row">
+              <div class="pub-cover">
+                <img src="assets/covers/paper-ica.svg" alt="Predefined-time convergence" />
+              </div>
+              <div class="pub-main">
+                <h5>Optimized predefined-time control for high-order nonlinear MASs via ICA and reinforcement learning</h5>
+                <p class="pub-authors"><strong>Qunsheng Zhang</strong>, Jianqiang Hu, Jinde Cao, Tianhu Yu</p>
+                <p class="pub-venue">Published in <i>ISA Transactions</i>, 2026 <span class="badge badge-success">JCR Q1</span></p>
+                <p class="pub-abstract">
+                  This work presents an identifier–critic–actor reinforcement learning framework for optimized predefined-time control of high-order nonlinear multi-agent systems. Prescribed performance, sliding-mode control, and projection correction are combined to achieve practical predefined-time consensus under disturbances while minimizing a long-term performance index.
+                </p>
+                <div class="pub-links">
+                  <a href="https://doi.org/10.1016/j.isatra.2026.06.029" target="_blank" rel="noreferrer">Paper</a>
+                </div>
+              </div>
+            </article>
 
-        <article class="row no-gutters border-bottom border-gray">
-          <div class="col-md-3 col-xl-2 p-3"><img src="assets/covers/paper-ica.svg" alt="Predefined-time convergence" class="w-100 rounded-sm" /></div>
-          <div class="col-md-9 col-xl-10 p-3 pl-md-0">
-            <h5 class="mt-0 mb-1 font-weight-normal">Optimized predefined-time control for high-order nonlinear MASs via ICA and reinforcement learning</h5>
-            <p class="mt-0 mb-0 small"><strong>Qunsheng Zhang</strong>, Jianqiang Hu, Jinde Cao, Tianhu Yu</p>
-            <p class="mt-0 mb-0 small">Published in <i>ISA Transactions</i>, 2026 <span class="badge badge-pill badge-success">JCR Q1</span></p>
-            <p class="mt-1 mb-0 small text-muted">This work presents an identifier–critic–actor reinforcement learning framework for optimized predefined-time control of high-order nonlinear multi-agent systems. Prescribed performance, sliding-mode control, and projection correction are combined to achieve practical predefined-time consensus under disturbances while minimizing a long-term performance index.</p>
-            <p class="small mb-0"><a href="https://doi.org/10.1016/j.isatra.2026.06.029" target="_blank" rel="noreferrer">[Paper]</a></p>
-          </div>
-        </article>
+            <article class="pub-row">
+              <div class="pub-cover">
+                <img src="assets/covers/paper-sync.svg" alt="Fixed-time synchronization" />
+              </div>
+              <div class="pub-main">
+                <h5>Fixed-time synchronization of nonlinear coupling MNNs with time delay via aperiodically intermittent sliding mode control</h5>
+                <p class="pub-authors"><strong>Qunsheng Zhang</strong>, Jianqiang Hu, Jinde Cao</p>
+                <p class="pub-venue">Published in <i>Communications in Nonlinear Science and Numerical Simulation</i>, 150, 108995, 2025 <span class="badge badge-success">JCR Q1</span></p>
+                <p class="pub-abstract">
+                  This paper studies fixed-time synchronization of nonlinear coupled memristive neural networks with time delay. An aperiodically intermittent sliding-mode control scheme is designed, and sufficient synchronization conditions with an explicit settling-time estimate are derived.
+                </p>
+                <div class="pub-links">
+                  <a href="https://doi.org/10.1016/j.cnsns.2025.108995" target="_blank" rel="noreferrer">Paper</a>
+                </div>
+              </div>
+            </article>
 
-        <article class="row no-gutters border-bottom border-gray">
-          <div class="col-md-3 col-xl-2 p-3"><img src="assets/covers/paper-sync.svg" alt="Fixed-time synchronization" class="w-100 rounded-sm" /></div>
-          <div class="col-md-9 col-xl-10 p-3 pl-md-0">
-            <h5 class="mt-0 mb-1 font-weight-normal">Fixed-time synchronization of nonlinear coupling MNNs with time delay via aperiodically intermittent sliding mode control</h5>
-            <p class="mt-0 mb-0 small"><strong>Qunsheng Zhang</strong>, Jianqiang Hu, Jinde Cao</p>
-            <p class="mt-0 mb-0 small">Published in <i>Communications in Nonlinear Science and Numerical Simulation</i>, 150, 108995, 2025 <span class="badge badge-pill badge-success">JCR Q1</span></p>
-            <p class="mt-1 mb-0 small text-muted">This paper studies fixed-time synchronization of nonlinear coupled memristive neural networks with time delay. An aperiodically intermittent sliding-mode control scheme is designed, and sufficient synchronization conditions with an explicit settling-time estimate are derived.</p>
-            <p class="small mb-0"><a href="https://doi.org/10.1016/j.cnsns.2025.108995" target="_blank" rel="noreferrer">[Paper]</a></p>
+            <article class="pub-row">
+              <div class="pub-cover">
+                <img src="assets/covers/paper-vera.svg" alt="VERA evidence quorum" />
+              </div>
+              <div class="pub-main">
+                <h5>VERA: Root-Domain Evidence Quorums for Carrier Integrity in Tool-Calling Agents</h5>
+                <p class="pub-authors"><strong>Qunsheng Zhang</strong></p>
+                <p class="pub-venue">Under Review at <i>WWW 2027</i> <span class="badge badge-warning">Under Review</span></p>
+                <p class="pub-abstract">
+                  VERA introduces root-domain evidence quorums and an execution-boundary monitor for tool-calling agents. The mechanism verifies signed evidence, semantic claims, task scope, provenance dependency closure, and exact invocation capabilities, supported by controlled experiments and finite-root model checking.
+                </p>
+                <div class="pub-links">
+                  <span>[Manuscript under review]</span>
+                </div>
+              </div>
+            </article>
           </div>
-        </article>
-
-        <article class="row no-gutters">
-          <div class="col-md-3 col-xl-2 p-3"><img src="assets/covers/paper-vera.svg" alt="VERA evidence quorum" class="w-100 rounded-sm" /></div>
-          <div class="col-md-9 col-xl-10 p-3 pl-md-0">
-            <h5 class="mt-0 mb-1 font-weight-normal">VERA: Root-Domain Evidence Quorums for Carrier Integrity in Tool-Calling Agents</h5>
-            <p class="mt-0 mb-0 small"><strong>Qunsheng Zhang</strong></p>
-            <p class="mt-0 mb-0 small">Under Review at <i>WWW 2027</i> <span class="badge badge-pill badge-warning">Under Review</span></p>
-            <p class="mt-1 mb-0 small text-muted">VERA introduces root-domain evidence quorums and an execution-boundary monitor for tool-calling agents. The mechanism verifies signed evidence, semantic claims, task scope, provenance dependency closure, and exact invocation capabilities, supported by controlled experiments and finite-root model checking.</p>
-            <p class="small mb-0 text-muted">[Manuscript under review]</p>
-          </div>
-        </article>
+        </div>
       </section>
     </main>
 
-    <footer class="footer"><div class="container"><div class="row my-3"><div class="col-6 text-muted"><i>Last updated: Oct 2026</i></div><div class="col-6 text-right text-muted">© <span id="year"></span> Qunsheng Zhang</div></div></div></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6"><div><i>Last updated: Oct 2026</i></div></div>
+          <div class="col-6"><div class="text-right">© <span id="year"></span> Qunsheng Zhang</div></div>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>

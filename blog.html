@@ -1,20 +1,91 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><title>Blogs - Qunsheng Zhang</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" /><link rel="icon" href="assets/favicon.svg" type="image/svg+xml" /><link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#f6e8df" />
+    <title>Blogs - Qunsheng Zhang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="bg-light">
-    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top mb-5 shadow-sm"><div class="container"><a class="navbar-brand" href="index.html"><strong>Homepage</strong></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-map"></i> Menu</button><div class="collapse navbar-collapse" id="navbarResponsive"><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li><li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li><li class="nav-item"><a class="nav-link" href="showcase.html">Showcase</a></li><li class="nav-item active"><a class="nav-link" href="blog.html">Blogs</a></li></ul></div></div></nav>
-    <main class="container">
-      <section class="card border-0 shadow-sm bg-white page-heading-card mb-3"><div class="card-body p-4"><h1>Blogs</h1><p class="text-muted mb-0">Notes on trustworthy AI, agent systems, and research practice.</p></div></section>
-      <section class="bg-white shadow-sm rounded-sm">
-        <article class="p-4 border-bottom border-gray"><div class="d-flex"><h5 class="font-weight-normal mb-1">From Control Theory to Agent Safety</h5><span class="badge badge-light ml-auto blog-status">Draft</span></div><p class="small text-muted mb-1">Aug 2026 · Research Notes</p><p class="small mb-0">A note on how invariants, stability, and explicit system boundaries can inform the design of trustworthy tool-calling agents.</p></article>
-        <article class="p-4 border-bottom border-gray"><div class="d-flex"><h5 class="font-weight-normal mb-1">Designing Auditable Multi-Agent Workflows</h5><span class="badge badge-light ml-auto blog-status">Draft</span></div><p class="small text-muted mb-1">Aug 2026 · Engineering Notes</p><p class="small mb-0">Practical lessons from combining behavior aggregation, hybrid retrieval, specialist agents, confidence calibration, and human review.</p></article>
-        <article class="p-4"><div class="d-flex"><h5 class="font-weight-normal mb-1">Evidence Before Confidence</h5><span class="badge badge-light ml-auto blog-status">Coming Soon</span></div><p class="small text-muted mb-1">Agent Security</p><p class="small mb-0">Why high-confidence model outputs should not substitute for verifiable evidence and scoped execution authority.</p></article>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Qunsheng Zhang</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i> Menu</button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="showcase.html">Showcase</a></li>
+            <li class="nav-item active"><a class="nav-link" href="blog.html">Blogs</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Blogs</h1>
+          <p>Notes on trustworthy AI, agent systems, and research practice.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="panel panel-flush">
+            <article class="blog-item">
+              <div class="d-flex align-items-start">
+                <h5>From Control Theory to Agent Safety</h5>
+                <span class="badge badge-light blog-status">Draft</span>
+              </div>
+              <p class="blog-meta">Aug 2026 · Research Notes</p>
+              <p>A note on how invariants, stability, and explicit system boundaries can inform the design of trustworthy tool-calling agents.</p>
+            </article>
+
+            <article class="blog-item">
+              <div class="d-flex align-items-start">
+                <h5>Designing Auditable Multi-Agent Workflows</h5>
+                <span class="badge badge-light blog-status">Draft</span>
+              </div>
+              <p class="blog-meta">Aug 2026 · Engineering Notes</p>
+              <p>Practical lessons from combining behavior aggregation, hybrid retrieval, specialist agents, confidence calibration, and human review.</p>
+            </article>
+
+            <article class="blog-item">
+              <div class="d-flex align-items-start">
+                <h5>Evidence Before Confidence</h5>
+                <span class="badge badge-light blog-status">Coming Soon</span>
+              </div>
+              <p class="blog-meta">Agent Security</p>
+              <p>Why high-confidence model outputs should not substitute for verifiable evidence and scoped execution authority.</p>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
-    <footer class="footer"><div class="container"><div class="row my-3"><div class="col-6 text-muted"><i>Last updated: Oct 2026</i></div><div class="col-6 text-right text-muted">© <span id="year"></span> Qunsheng Zhang</div></div></div></footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script><script src="script.js"></script>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6"><div><i>Last updated: Oct 2026</i></div></div>
+          <div class="col-6"><div class="text-right">© <span id="year"></span> Qunsheng Zhang</div></div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
