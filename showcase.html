@@ -14,13 +14,22 @@
       rel="stylesheet"
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20261105" />
+    <link rel="stylesheet" href="styles.css?v=20261106" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("qs-theme");
+          if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body class="bg-light">
     <nav class="navbar navbar-expand-md navbar-light fixed-top mb-5">
       <div class="container">
         <a class="navbar-brand" href="index.html">Qunsheng Zhang</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i> Menu</button>
+        
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -29,6 +38,11 @@
             <li class="nav-item active"><a class="nav-link" href="showcase.html">Showcase</a></li>
             <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li>
           </ul>
+        </div>
+      
+        <div class="navbar-actions">
+          <button class="theme-toggle" type="button" aria-label="Toggle color theme"><i class="fas fa-moon icon-moon"></i><i class="fas fa-sun icon-sun"></i></button>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i> Menu</button>
         </div>
       </div>
     </nav>
@@ -91,17 +105,23 @@
       </section>
     </main>
 
-    <footer class="footer">
+        <footer class="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-6"><div><i>Last updated: Oct 2026</i></div></div>
-          <div class="col-6"><div class="text-right">© <span id="year"></span> Qunsheng Zhang</div></div>
+        <div class="footer-icons">
+          <a href="mailto:qunsheng815@gmail.com" aria-label="Email"><i class="fas fa-at"></i></a>
+          <a href="https://scholar.google.com/citations?user=bciwAu0AAAAJ&amp;hl=zh-CN&amp;authuser=1" target="_blank" rel="noreferrer" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+          <a href="https://github.com/Qunsheng-Zhang" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="assets/Qunsheng-Zhang-Resume.pdf?v=202610" target="_blank" aria-label="Curriculum Vitae"><i class="fas fa-file-pdf"></i></a>
+        </div>
+        <div class="footer-meta">
+          <span><i>Last updated: Oct 2026</i></span>
+          <span>© <span id="year"></span> Qunsheng Zhang</span>
         </div>
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js?v=20261106"></script>
   </body>
 </html>
