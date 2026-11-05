@@ -658,9 +658,9 @@ button:focus-visible {
 
 .timeline-item img {
   flex: none;
-  width: 22px;
-  height: 22px;
-  margin-top: 0.3rem;
+  width: 25px;
+  height: 25px;
+  margin-top: 0.25rem;
   object-fit: contain;
 }
 
@@ -702,6 +702,13 @@ button:focus-visible {
   font-style: normal;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
+}
+
+.timeline-note {
+  margin: 0.35rem 0 0;
+  color: var(--muted-fg);
+  font-size: 0.8rem;
+  line-height: 1.55;
 }
 
 .news-item {
@@ -1117,6 +1124,11 @@ button:focus-visible {
 
 .toolbox strong {
   color: var(--fg);
+}
+
+/* Dark-mode logos */
+:root[data-theme="dark"] .timeline-item img[src$="bocom.png"] {
+  filter: brightness(1.7) saturate(1.25);
 }
 
 /* Dark-mode media dimming */
