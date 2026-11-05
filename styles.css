@@ -957,6 +957,88 @@ button:focus-visible {
   margin-left: auto;
 }
 
+
+/* Featured project */
+.feature-panel {
+  margin-bottom: 1.5rem;
+}
+
+.feature-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.feature-intro {
+  min-width: 0;
+}
+
+.feature-title {
+  margin: 0.25rem 0 0.4rem;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  line-height: 1.25;
+}
+
+.feature-meta {
+  margin: 0;
+  color: var(--muted-fg);
+  font-size: 0.88rem;
+}
+
+.feature-stat {
+  flex: none;
+  padding-left: 1.6rem;
+  border-left: 1px solid var(--border);
+  text-align: right;
+}
+
+.feature-stat strong {
+  display: block;
+  color: var(--primary);
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 5vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.feature-stat span {
+  display: block;
+  max-width: 132px;
+  margin-top: 0.35rem;
+  color: var(--muted-fg);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.feature-summary {
+  max-width: 860px;
+  margin: 1.25rem 0 1.5rem;
+  color: var(--muted-fg);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 2.25rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--divider);
+}
+
+.feature-grid h5 {
+  margin-bottom: 0.2rem;
+  font-size: 0.95rem;
+}
+
+.feature-grid p {
+  margin: 0;
+  color: var(--muted-fg);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
 /* ------------------------------------------------------------------
    Badges & buttons
 ------------------------------------------------------------------ */
@@ -1249,6 +1331,26 @@ button:focus-visible {
     align-items: flex-start;
     flex-direction: column;
     gap: 0.35rem;
+  }
+
+  .feature-head {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .feature-stat {
+    padding-left: 0;
+    border-left: 0;
+    text-align: left;
+  }
+
+  .feature-stat span {
+    max-width: none;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .card-body {
