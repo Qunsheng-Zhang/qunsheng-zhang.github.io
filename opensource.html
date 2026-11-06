@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#f6e8df" />
     <meta
       name="description"
-      content="Qunsheng Zhang's open-source contributions to verifiable mathematical software, Lean 4 formalization, and AI4Math infrastructure."
+      content="Qunsheng Zhang's open-source contributions across formal proof, verifiable software, control, and quantitative research."
     />
     <title>Open Source - Qunsheng Zhang</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
@@ -57,9 +57,9 @@
         <div class="container">
           <h1>Open Source</h1>
           <p>
-            Contributions to verifiable mathematical software, Lean 4 formalization, and AI4Math
-            infrastructure. I focus on making mathematical claims checkable: typed contracts,
-            explicit verifiers, adversarial regressions, and benchmark-quality statements.
+            Contributions across formal proof, verifiable software, control, and quantitative
+            research. I focus on making mathematical and engineering claims checkable: precise
+            definitions, explicit verifiers, reproducible evidence, and benchmark-quality results.
           </p>
         </div>
       </section>
@@ -72,91 +72,42 @@
                 <div class="col-label">Merged</div>
                 <h3 class="mb-1">2 PRs</h3>
                 <p class="small text-muted mb-0">
-                  Jacobian · graph-isomorphism result validation and exact-arithmetic fallback
+                  Verifiable software · Jacobian result validation and exact-arithmetic fallback
                 </p>
               </div>
               <div class="col-md-4 mb-3 mb-md-0">
                 <div class="col-label">Under review</div>
                 <h3 class="mb-1">3 PRs</h3>
                 <p class="small text-muted mb-0">
-                  Formal Conjectures · Lean 4 statements, optimization constants, and statement audits
+                  Formal proof · Lean 4 statements, optimization constants, and statement audits
                 </p>
               </div>
               <div class="col-md-4">
-                <div class="col-label">Focus</div>
-                <h3 class="mb-1">Verifiable math</h3>
+                <div class="col-label">Themes</div>
+                <h3 class="mb-1">4</h3>
                 <p class="small text-muted mb-0">
-                  Typed contracts · explicit verifiers · Lean 4 / mathlib
+                  Formal proof · verifiable software · control · quantitative research
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="section-head">
-            <h2>Merged contributions</h2>
-            <p class="section-lead">Accepted and merged into the upstream repository.</p>
+          <div class="panel mb-4">
+            <div class="col-label">Jump to</div>
+            <p class="mb-0 small">
+              <a href="#formal-proof">Formal proof &amp; Lean</a> ·
+              <a href="#verifiable-software">Verifiable software</a> ·
+              <a href="#control-dynamics">Control &amp; dynamics</a> ·
+              <a href="#quantitative">Quantitative &amp; finance</a> ·
+              <a href="#projects">Projects</a>
+            </p>
           </div>
 
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <article class="card h-100">
-                <div class="card-body d-flex flex-column">
-                  <span class="badge badge-success mb-2">Merged</span>
-                  <h5 class="card-title">Graph-isomorphism result validation</h5>
-                  <p class="small text-muted mb-2">
-                    <a href="https://github.com/morluto/jacobian" target="_blank" rel="noreferrer">morluto/jacobian</a>
-                    · Oct 2026
-                  </p>
-                  <p class="card-text small">
-                    Bound <code>GraphIsomorphismResult</code> to its source graphs. Parsing checks
-                    equal vertex count and directedness, rejects mappings on
-                    <code>NOT_ISOMORPHIC</code>, and requires a total bijection for
-                    <code>ISOMORPHIC</code>; the explicit verifier checks complete directed or
-                    undirected adjacency preservation. Added adversarial regressions for empty,
-                    duplicate, partial, and orientation-breaking mappings.
-                  </p>
-                  <div class="card-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Pydantic</span>
-                    <span class="tag">Verification</span>
-                  </div>
-                  <a class="small mt-3" href="https://github.com/morluto/jacobian/pull/4558" target="_blank" rel="noreferrer">View PR #4558 <i class="fas fa-arrow-right"></i></a>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-md-6 mb-4">
-              <article class="card h-100">
-                <div class="card-body d-flex flex-column">
-                  <span class="badge badge-success mb-2">Merged</span>
-                  <h5 class="card-title">Unit-circle sup-norm fallback</h5>
-                  <p class="small text-muted mb-2">
-                    <a href="https://github.com/morluto/jacobian" target="_blank" rel="noreferrer">morluto/jacobian</a>
-                    · Oct 2026
-                  </p>
-                  <p class="card-text small">
-                    Fixed an admitted exact-arithmetic request that raised above Python's
-                    4,300-digit integer-string limit. Replaced <code>len(str(...))</code> with the
-                    canonical <code>decimal_digit_width</code> helper, preserving the documented
-                    <code>None</code> exact-value fallback and certified enclosure. Added
-                    helper-level and end-to-end regressions.
-                  </p>
-                  <div class="card-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Exact arithmetic</span>
-                    <span class="tag">Regression</span>
-                  </div>
-                  <a class="small mt-3" href="https://github.com/morluto/jacobian/pull/4560" target="_blank" rel="noreferrer">View PR #4560 <i class="fas fa-arrow-right"></i></a>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="section-head mt-4">
-            <h2>Under review</h2>
+          <div class="section-head" id="formal-proof">
+            <h2>Formal proof &amp; Lean 4</h2>
             <p class="section-lead">
-              Public pull requests in the Formal Conjectures AI4Math benchmark. Status updated
-              November 2026.
+              Research-level statements and benchmark contributions in Lean 4 / mathlib, with
+              source fidelity and machine-checked builds.
             </p>
           </div>
 
@@ -246,12 +197,144 @@
             </div>
           </div>
 
-          <div class="panel toolbox mt-4">
-            <div class="col-label">Independent projects</div>
+          <div class="section-head mt-4" id="verifiable-software">
+            <h2>Verifiable software &amp; exact arithmetic</h2>
+            <p class="section-lead">
+              Typed contracts, explicit verifiers, and robust exact-arithmetic boundaries in
+              mathematical software.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge badge-success mb-2">Merged</span>
+                  <h5 class="card-title">Graph-isomorphism result validation</h5>
+                  <p class="small text-muted mb-2">
+                    <a href="https://github.com/morluto/jacobian" target="_blank" rel="noreferrer">morluto/jacobian</a>
+                    · Oct 2026
+                  </p>
+                  <p class="card-text small">
+                    Bound <code>GraphIsomorphismResult</code> to its source graphs. Parsing checks
+                    equal vertex count and directedness, rejects mappings on
+                    <code>NOT_ISOMORPHIC</code>, and requires a total bijection for
+                    <code>ISOMORPHIC</code>; the explicit verifier checks complete directed or
+                    undirected adjacency preservation. Added adversarial regressions for empty,
+                    duplicate, partial, and orientation-breaking mappings.
+                  </p>
+                  <div class="card-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Pydantic</span>
+                    <span class="tag">Verification</span>
+                  </div>
+                  <a class="small mt-3" href="https://github.com/morluto/jacobian/pull/4558" target="_blank" rel="noreferrer">View PR #4558 <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge badge-success mb-2">Merged</span>
+                  <h5 class="card-title">Unit-circle sup-norm fallback</h5>
+                  <p class="small text-muted mb-2">
+                    <a href="https://github.com/morluto/jacobian" target="_blank" rel="noreferrer">morluto/jacobian</a>
+                    · Oct 2026
+                  </p>
+                  <p class="card-text small">
+                    Fixed an admitted exact-arithmetic request that raised above Python's
+                    4,300-digit integer-string limit. Replaced <code>len(str(...))</code> with the
+                    canonical <code>decimal_digit_width</code> helper, preserving the documented
+                    <code>None</code> exact-value fallback and certified enclosure. Added
+                    helper-level and end-to-end regressions.
+                  </p>
+                  <div class="card-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Exact arithmetic</span>
+                    <span class="tag">Regression</span>
+                  </div>
+                  <a class="small mt-3" href="https://github.com/morluto/jacobian/pull/4560" target="_blank" rel="noreferrer">View PR #4560 <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="section-head mt-4" id="control-dynamics">
+            <h2>Control &amp; dynamical systems</h2>
+            <p class="section-lead">
+              Open-source tooling and reproducibility artifacts for control, multi-agent systems,
+              and learning-based control.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8 mb-4">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge badge-light mb-2">Research direction</span>
+                  <h5 class="card-title">Control, multi-agent systems &amp; learning-based control</h5>
+                  <p class="card-text small">
+                    Selected work on fixed-time and prescribed-time control, secure cooperative
+                    control, optimization, and reinforcement learning is described on the Projects
+                    page. Open-source control tooling, simulation harnesses, and reproducible
+                    benchmarks will be added here as they are released.
+                  </p>
+                  <div class="card-tags">
+                    <span class="tag">Control theory</span>
+                    <span class="tag">Multi-agent systems</span>
+                    <span class="tag">Reinforcement learning</span>
+                    <span class="tag">Optimization</span>
+                  </div>
+                  <a class="small mt-3" href="projects.html">View related projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="section-head mt-4" id="quantitative">
+            <h2>Quantitative research &amp; finance</h2>
+            <p class="section-lead">
+              Quantitative evaluation, data pipelines, and reproducible research workflows.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8 mb-4">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge badge-light mb-2">Research direction</span>
+                  <h5 class="card-title">Quantitative evaluation &amp; data systems</h5>
+                  <p class="card-text small">
+                    Quantitative research, evaluation pipelines, and reproducible data workflows
+                    will be added here as public projects are released. The emphasis is on exact
+                    definitions, measurable error, and auditable results rather than one-off
+                    notebooks.
+                  </p>
+                  <div class="card-tags">
+                    <span class="tag">Quantitative research</span>
+                    <span class="tag">Evaluation</span>
+                    <span class="tag">Data pipelines</span>
+                  </div>
+                  <a class="small mt-3" href="projects.html">View related projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="section-head mt-4" id="projects">
+            <h2>Independent projects</h2>
+            <p class="section-lead">
+              Open-source repositories and reproducible benchmarks released outside these upstream
+              projects.
+            </p>
+          </div>
+
+          <div class="panel toolbox">
             <p class="mb-0">
-              Open-source projects and reproducible benchmarks will be added here as they are
-              released. Existing research and production projects are on the
-              <a href="projects.html">Projects</a> page.
+              Existing research and production projects are on the
+              <a href="projects.html">Projects</a> page. New public repositories will be listed
+              here with code, documentation, and evaluation results.
             </p>
           </div>
 
