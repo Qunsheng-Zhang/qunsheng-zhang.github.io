@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#f6e8df" />
+    <meta
+      name="description"
+      content="Qunsheng Zhang's open-source contributions to verifiable mathematical software, Lean 4 formalization, and AI4Math infrastructure."
+    />
+    <title>Open Source - Qunsheng Zhang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=20261108" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("qs-theme");
+          if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Qunsheng Zhang</a>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item active"><a class="nav-link" href="opensource.html">Open Source</a></li>
+            <li class="nav-item"><a class="nav-link" href="showcase.html">Showcase</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar-actions">
+          <button class="theme-toggle" type="button" aria-label="Toggle color theme"><i class="fas fa-moon icon-moon"></i><i class="fas fa-sun icon-sun"></i></button>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i> Menu</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Open Source</h1>
+          <p>
+            Contributions to verifiable mathematical software, Lean 4 formalization, and AI4Math
+            infrastructure. I focus on making mathematical claims checkable: typed contracts,
+            explicit verifiers, adversarial regressions, and benchmark-quality statements.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="panel mb-4">
+            <div class="row">
+              <div class="col-md-4 mb-3 mb-md-0">
+                <div class="col-label">Merged</div>
+                <h3 class="mb-1">2 PRs</h3>
+                <p class="small text-muted mb-0">
+                  Jacobian · graph-isomorphism result validation and exact-arithmetic fallback
+                </p>
+              </div>
+              <div class="col-md-4 mb-3 mb-md-0">
+                <div class="col-label">Under review</div>
+                <h3 class="mb-1">3 PRs</h3>
+                <p class="small text-muted mb-0">
+                  Formal Conjectures · Lean 4 statements, optimization constants, and statement audits
+                </p>
+              </div>
+              <div class="col-md-4">
+                <div class="col-label">Focus</div>
+                <h3 class="mb-1">Verifiable math</h3>
+                <p class="small text-muted mb-0">
+                  Typed contracts · explicit verifiers · Lean 4 / mathlib
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-head">
+            <h2>Merged contributions</h2>
+            <p class="section-lead">Accepted and merged into the upstream repository.</p>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge badge-success mb-2">Merged</span>
+                  <h5 class="card-title">Graph-isomorphism result validation</h5>
+                  <p class="small text-muted mb-2">
+                    <a href="https://github.com/morluto/jacobian" target="_blank" rel="noreferrer">morluto/jacobian</a>
+                    · Oct 2026
+                  </p>
+                  <p class="card-text small">
+                    Bound <code>GraphIsomorphismResult</code> to its source graphs. Parsing checks
+                    equal vertex count and directedness, rejects mappings on
+                    <code>NOT_ISOMORPHIC</code>, and requires a total bijection for
+                    <code>ISOMORPHIC</code>; the explicit verifier checks complete directed or
+                    undirected adjacency preservation. Added adversarial regressions for empty,
+                    duplicate, partial, and orientation-breaking mappings.
+                  </p>
+                  <div class="card-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Pydantic</span>
+                    <span class="tag">Verification</span>
+                  </div>
+                  <a class="small mt-3" href="https://github.com/morluto/jacobian/pull/4558" target="_blank" rel="noreferrer">View PR #4558 <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge badge-success mb-2">Merged</span>
+                  <h5 class="card-title">Unit-circle sup-norm fallback</h5>
+                  <p class="small text-muted mb-2">
+                    <a href="https://github.com/morluto/jacobian" target="_blank" rel="noreferrer">morluto/jacobian</a>
+                    · Oct 2026
+                  </p>
+                  <p class="card-text small">
+                    Fixed an admitted exact-arithmetic request that raised above Python's
+                    4,300-digit integer-string limit. Replaced <code>len(str(...))</code> with the
+                    canonical <code>decimal_digit_width</code> helper, preserving the documented
+                    <code>None</code> exact-value fallback and certified enclosure. Added
+                    helper-level and end-to-end regressions.
+                  </p>
+                  <div class="card-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Exact arithmetic</span>
+                    <span class="tag">Regression</span>
+                  </div>
+                  <a class="small mt-3" href="https://github.com/morluto/jacobian/pull/4560" target="_blank" rel="noreferrer">View PR #4560 <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="section-head mt-4">
+            <h2>Under review</h2>
+            <p class="section-lead">
+              Public pull requests in the Formal Conjectures AI4Math benchmark. Status updated
+              November 2026.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <div class="mb-2">
+                    <span class="badge badge-warning">Under review</span>
+                    <span class="badge badge-light">1 community approval</span>
+                  </div>
+                  <h5 class="card-title">Jeśmanowicz' conjecture in Lean 4</h5>
+                  <p class="small text-muted mb-2">
+                    <a href="https://github.com/google-deepmind/formal-conjectures" target="_blank" rel="noreferrer">google-deepmind/formal-conjectures</a>
+                    · Oct 2026
+                  </p>
+                  <p class="card-text small">
+                    Formalized the statement for primitive Pythagorean triples: for pairwise coprime
+                    positive integers <code>a, b, c</code> with <code>a^2 + b^2 = c^2</code>, the only
+                    positive integer solution of <code>a^x + b^y = c^z</code> is
+                    <code>(x, y, z) = (2, 2, 2)</code>. A statement-only benchmark entry built with
+                    <code>lake --wfail</code>.
+                  </p>
+                  <div class="card-tags">
+                    <span class="tag">Lean 4</span>
+                    <span class="tag">mathlib</span>
+                    <span class="tag">Diophantine equations</span>
+                  </div>
+                  <a class="small mt-3" href="https://github.com/google-deepmind/formal-conjectures/pull/7627" target="_blank" rel="noreferrer">View PR #7627 <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <div class="mb-2">
+                    <span class="badge badge-warning">Under review</span>
+                    <span class="badge badge-light">2 community approvals</span>
+                  </div>
+                  <h5 class="card-title">Optimization constant 27a</h5>
+                  <p class="small text-muted mb-2">
+                    <a href="https://github.com/google-deepmind/formal-conjectures" target="_blank" rel="noreferrer">google-deepmind/formal-conjectures</a>
+                    · Oct 2026
+                  </p>
+                  <p class="card-text small">
+                    Extracted the chromatic number of the plane from a scoped notation into
+                    <code>planeChromaticNumber</code>, tagged
+                    <code>@[optimization_constant "27a"]</code>, and preserved the
+                    <code>χ(ℝ²)</code> notation. No theorem statements were changed.
+                  </p>
+                  <div class="card-tags">
+                    <span class="tag">Lean 4</span>
+                    <span class="tag">Optimization constants</span>
+                    <span class="tag">Refactor</span>
+                  </div>
+                  <a class="small mt-3" href="https://github.com/google-deepmind/formal-conjectures/pull/7625" target="_blank" rel="noreferrer">View PR #7625 <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <div class="mb-2">
+                    <span class="badge badge-warning">Under review</span>
+                  </div>
+                  <h5 class="card-title">Green's Problem 29 statement correction</h5>
+                  <p class="small text-muted mb-2">
+                    <a href="https://github.com/google-deepmind/formal-conjectures" target="_blank" rel="noreferrer">google-deepmind/formal-conjectures</a>
+                    · Nov 2026
+                  </p>
+                  <p class="card-text small">
+                    Separated the actual open problem (arbitrary <code>S</code>, uniform
+                    <code>K^(-O(1))</code> bound) from the false <code>S ⊆ A</code> strengthening;
+                    retained the counterexample as a variant and preserved the known
+                    <code>≫_K</code> result.
+                  </p>
+                  <div class="card-tags">
+                    <span class="tag">Lean 4</span>
+                    <span class="tag">Additive combinatorics</span>
+                    <span class="tag">Statement audit</span>
+                  </div>
+                  <a class="small mt-3" href="https://github.com/google-deepmind/formal-conjectures/pull/7810" target="_blank" rel="noreferrer">View PR #7810 <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="panel toolbox mt-4">
+            <div class="col-label">Independent projects</div>
+            <p class="mb-0">
+              Open-source projects and reproducible benchmarks will be added here as they are
+              released. Existing research and production projects are on the
+              <a href="projects.html">Projects</a> page.
+            </p>
+          </div>
+
+          <div class="panel toolbox mt-3">
+            <div class="col-label">How I work</div>
+            <p><strong>Verifiable contracts:</strong> typed result models, explicit verifiers, and source-bound claims rather than unchecked trust in serialized values.</p>
+            <p><strong>Adversarial evidence:</strong> empty, duplicate, partial, boundary, and forged inputs are treated as first-class regression cases.</p>
+            <p><strong>Lean formalization:</strong> research-level statements in Lean 4 / mathlib, with source fidelity, category and AMS metadata, and <code>lake --wfail</code> validation.</p>
+            <p><strong>Benchmark quality:</strong> statement correctness and source fidelity for AI4Math evaluation, including separating open problems from refuted strengthenings.</p>
+          </div>
+
+          <p class="small text-muted mt-4 mb-0">
+            This page is updated as new pull requests are merged and new projects are released.
+            For the complete activity stream, see
+            <a href="https://github.com/Qunsheng-Zhang" target="_blank" rel="noreferrer">GitHub</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-icons">
+          <a href="mailto:qunsheng815@gmail.com" aria-label="Email"><i class="fas fa-at"></i></a>
+          <a href="https://scholar.google.com/citations?user=bciwAu0AAAAJ&amp;hl=zh-CN&amp;authuser=1" target="_blank" rel="noreferrer" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+          <a href="https://github.com/Qunsheng-Zhang" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="assets/Qunsheng-Zhang-Resume.pdf?v=202611" target="_blank" aria-label="Curriculum Vitae"><i class="fas fa-file-pdf"></i></a>
+        </div>
+        <div class="footer-meta">
+          <span><i>Last updated: Nov 2026</i></span>
+          <span>© <span id="year"></span> Qunsheng Zhang</span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="script.js?v=20261108"></script>
+  </body>
+</html>
