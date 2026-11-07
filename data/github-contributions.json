@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-11-07T16:02:44+00:00",
+  "source": "github-search",
+  "query": "author:Qunsheng-Zhang type:pr",
+  "total_count": 5,
+  "counts": {
+    "merged": 2,
+    "open": 3,
+    "closed": 0
+  },
+  "items": [
+    {
+      "number": 7810,
+      "title": "fix(GreensOpenProblems/29): separate the open problem from the false subset variant",
+      "repo": "google-deepmind/formal-conjectures",
+      "url": "https://github.com/google-deepmind/formal-conjectures/pull/7810",
+      "state": "open",
+      "status": "open",
+      "merged_at": null,
+      "created_at": "2026-11-05T08:20:50Z",
+      "updated_at": "2026-11-05T08:47:23Z",
+      "labels": [
+        "green-problems"
+      ],
+      "theme": "formal-proof",
+      "own_repo": false
+    },
+    {
+      "number": 7627,
+      "title": "feat(Arxiv/1912.12687): state Jesmanowicz' conjecture",
+      "repo": "google-deepmind/formal-conjectures",
+      "url": "https://github.com/google-deepmind/formal-conjectures/pull/7627",
+      "state": "open",
+      "status": "open",
+      "merged_at": null,
+      "created_at": "2026-10-26T05:53:38Z",
+      "updated_at": "2026-11-04T07:21:13Z",
+      "labels": [
+        "arxiv"
+      ],
+      "theme": "formal-proof",
+      "own_repo": false
+    },
+    {
+      "number": 7625,
+      "title": "refactor(ErdosProblems/508): extract optimization constant 27a",
+      "repo": "google-deepmind/formal-conjectures",
+      "url": "https://github.com/google-deepmind/formal-conjectures/pull/7625",
+      "state": "open",
+      "status": "open",
+      "merged_at": null,
+      "created_at": "2026-10-26T05:13:42Z",
+      "updated_at": "2026-11-02T07:59:30Z",
+      "labels": [
+        "erdos-problems"
+      ],
+      "theme": "formal-proof",
+      "own_repo": false
+    },
+    {
+      "number": 4560,
+      "title": "fix(unit-circle): keep the sup-norm height fallback total",
+      "repo": "morluto/jacobian",
+      "url": "https://github.com/morluto/jacobian/pull/4560",
+      "state": "closed",
+      "status": "merged",
+      "merged_at": "2026-10-29T14:08:01Z",
+      "created_at": "2026-10-25T12:37:46Z",
+      "updated_at": "2026-10-29T14:08:02Z",
+      "labels": [],
+      "theme": "verifiable-software",
+      "own_repo": false
+    },
+    {
+      "number": 4558,
+      "title": "fix(graphs): validate source-bound isomorphism witness structure",
+      "repo": "morluto/jacobian",
+      "url": "https://github.com/morluto/jacobian/pull/4558",
+      "state": "closed",
+      "status": "merged",
+      "merged_at": "2026-10-29T14:08:01Z",
+      "created_at": "2026-10-23T02:52:25Z",
+      "updated_at": "2026-10-29T14:08:02Z",
+      "labels": [],
+      "theme": "verifiable-software",
+      "own_repo": false
+    }
+  ]
+}

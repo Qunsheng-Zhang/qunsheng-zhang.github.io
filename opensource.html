@@ -70,14 +70,14 @@
             <div class="row">
               <div class="col-md-4 mb-3 mb-md-0">
                 <div class="col-label">Merged</div>
-                <h3 class="mb-1">2 PRs</h3>
+                <h3 class="mb-1" id="github-merged-count">2 PRs</h3>
                 <p class="small text-muted mb-0">
                   Verifiable software · Jacobian result validation and exact-arithmetic fallback
                 </p>
               </div>
               <div class="col-md-4 mb-3 mb-md-0">
                 <div class="col-label">Under review</div>
-                <h3 class="mb-1">3 PRs</h3>
+                <h3 class="mb-1" id="github-open-count">3 PRs</h3>
                 <p class="small text-muted mb-0">
                   Formal proof · Lean 4 statements, optimization constants, and statement audits
                 </p>
@@ -99,6 +99,7 @@
               <a href="#verifiable-software">Verifiable software</a> ·
               <a href="#control-dynamics">Control &amp; dynamics</a> ·
               <a href="#quantitative">Quantitative &amp; finance</a> ·
+              <a href="#github-activity-section">Live activity</a> ·
               <a href="#projects">Projects</a>
             </p>
           </div>
@@ -322,6 +323,22 @@
             </div>
           </div>
 
+          <div class="section-head mt-4" id="github-activity-section">
+            <h2>Live GitHub activity</h2>
+            <p class="section-lead">
+              Automatically generated from public pull requests authored by
+              <a href="https://github.com/Qunsheng-Zhang" target="_blank" rel="noreferrer">Qunsheng-Zhang</a>;
+              updated daily. The curated cards above add context and theme.
+            </p>
+          </div>
+
+          <div class="panel">
+            <div id="github-activity" aria-live="polite">
+              <p class="small text-muted mb-0">Loading GitHub activity…</p>
+            </div>
+            <p class="small text-muted mt-3 mb-0" id="github-activity-updated"></p>
+          </div>
+
           <div class="section-head mt-4" id="projects">
             <h2>Independent projects</h2>
             <p class="section-lead">
@@ -373,5 +390,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script src="script.js?v=20261108"></script>
+    <script src="opensource.js?v=20261108"></script>
   </body>
 </html>
