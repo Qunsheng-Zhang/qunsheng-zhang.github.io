@@ -823,6 +823,10 @@ button:focus-visible {
   transition: transform 0.25s ease;
 }
 
+.pub-cover-link {
+  display: block;
+}
+
 .pub-row:hover .pub-cover img {
   transform: scale(1.02);
 }
