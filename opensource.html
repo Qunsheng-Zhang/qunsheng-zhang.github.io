@@ -60,6 +60,10 @@
             Contributions across formal proof, verifiable software, control, and quantitative
             research. I focus on making mathematical and engineering claims checkable: precise
             definitions, explicit verifiers, reproducible evidence, and benchmark-quality results.
+            Merged contributor to
+            <a href="https://github.com/google-deepmind/formal-conjectures" target="_blank" rel="noreferrer">google-deepmind/formal-conjectures</a>
+            and
+            <a href="https://github.com/morluto/jacobian" target="_blank" rel="noreferrer">morluto/jacobian</a>.
           </p>
         </div>
       </section>
@@ -70,16 +74,17 @@
             <div class="row">
               <div class="col-md-4 mb-3 mb-md-0">
                 <div class="col-label">Merged</div>
-                <h3 class="mb-1" id="github-merged-count">2 PRs</h3>
+                <h3 class="mb-1" id="github-merged-count">3 PRs</h3>
                 <p class="small text-muted mb-0">
-                  Verifiable software · Jacobian result validation and exact-arithmetic fallback
+                  Formal proof &amp; verifiable software · Lean 4 statement audit, result validation,
+                  exact arithmetic
                 </p>
               </div>
               <div class="col-md-4 mb-3 mb-md-0">
                 <div class="col-label">Under review</div>
-                <h3 class="mb-1" id="github-open-count">3 PRs</h3>
+                <h3 class="mb-1" id="github-open-count">2 PRs</h3>
                 <p class="small text-muted mb-0">
-                  Formal proof · Lean 4 statements, optimization constants, and statement audits
+                  Formal proof · Lean 4 statements and optimization constants awaiting maintainer merge
                 </p>
               </div>
               <div class="col-md-4">
@@ -108,11 +113,40 @@
             <h2>Formal proof &amp; Lean 4</h2>
             <p class="section-lead">
               Research-level statements and benchmark contributions in Lean 4 / mathlib, with
-              source fidelity and machine-checked builds.
+              source fidelity and machine-checked builds. Includes a merged statement-audit fix in
+              Google DeepMind's Formal Conjectures benchmark.
             </p>
           </div>
 
           <div class="row">
+            <div class="col-md-6 mb-4">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <div class="mb-2">
+                    <span class="badge badge-success">Merged</span>
+                    <span class="badge badge-light">Maintainer: mo271</span>
+                  </div>
+                  <h5 class="card-title">Green's Problem 29 statement correction</h5>
+                  <p class="small text-muted mb-2">
+                    <a href="https://github.com/google-deepmind/formal-conjectures" target="_blank" rel="noreferrer">google-deepmind/formal-conjectures</a>
+                    · Nov 2026
+                  </p>
+                  <p class="card-text small">
+                    Separated the actual open problem (arbitrary <code>S</code>, uniform
+                    <code>K^(-O(1))</code> bound) from the false <code>S ⊆ A</code> strengthening;
+                    retained the counterexample as a variant and preserved the known
+                    <code>≫_K</code> result. Closes issue #6557.
+                  </p>
+                  <div class="card-tags">
+                    <span class="tag">Lean 4</span>
+                    <span class="tag">Additive combinatorics</span>
+                    <span class="tag">Statement audit</span>
+                  </div>
+                  <a class="small mt-3" href="https://github.com/google-deepmind/formal-conjectures/pull/7810" target="_blank" rel="noreferrer">View PR #7810 <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </article>
+            </div>
+
             <div class="col-md-6 mb-4">
               <article class="card h-100">
                 <div class="card-body d-flex flex-column">
@@ -166,33 +200,6 @@
                     <span class="tag">Refactor</span>
                   </div>
                   <a class="small mt-3" href="https://github.com/google-deepmind/formal-conjectures/pull/7625" target="_blank" rel="noreferrer">View PR #7625 <i class="fas fa-arrow-right"></i></a>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-md-6 mb-4">
-              <article class="card h-100">
-                <div class="card-body d-flex flex-column">
-                  <div class="mb-2">
-                    <span class="badge badge-warning">Under review</span>
-                  </div>
-                  <h5 class="card-title">Green's Problem 29 statement correction</h5>
-                  <p class="small text-muted mb-2">
-                    <a href="https://github.com/google-deepmind/formal-conjectures" target="_blank" rel="noreferrer">google-deepmind/formal-conjectures</a>
-                    · Nov 2026
-                  </p>
-                  <p class="card-text small">
-                    Separated the actual open problem (arbitrary <code>S</code>, uniform
-                    <code>K^(-O(1))</code> bound) from the false <code>S ⊆ A</code> strengthening;
-                    retained the counterexample as a variant and preserved the known
-                    <code>≫_K</code> result.
-                  </p>
-                  <div class="card-tags">
-                    <span class="tag">Lean 4</span>
-                    <span class="tag">Additive combinatorics</span>
-                    <span class="tag">Statement audit</span>
-                  </div>
-                  <a class="small mt-3" href="https://github.com/google-deepmind/formal-conjectures/pull/7810" target="_blank" rel="noreferrer">View PR #7810 <i class="fas fa-arrow-right"></i></a>
                 </div>
               </article>
             </div>

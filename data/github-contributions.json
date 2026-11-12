@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-09T11:24:21+00:00",
+  "generated_at": "2026-11-12T06:38:19+00:00",
   "source": "github-search",
   "query": "author:Qunsheng-Zhang type:pr",
   "total_count": 5,
   "counts": {
-    "merged": 2,
-    "open": 3,
+    "merged": 3,
+    "open": 2,
     "closed": 0
   },
   "items": [
@@ -14,11 +14,11 @@
       "title": "fix(GreensOpenProblems/29): separate the open problem from the false subset variant",
       "repo": "google-deepmind/formal-conjectures",
       "url": "https://github.com/google-deepmind/formal-conjectures/pull/7810",
-      "state": "open",
-      "status": "open",
-      "merged_at": null,
+      "state": "closed",
+      "status": "merged",
+      "merged_at": "2026-11-12T00:14:38Z",
       "created_at": "2026-11-05T08:20:50Z",
-      "updated_at": "2026-11-08T19:07:17Z",
+      "updated_at": "2026-11-12T00:14:38Z",
       "labels": [
         "green-problems"
       ],
